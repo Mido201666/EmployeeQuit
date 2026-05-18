@@ -61,19 +61,19 @@ public class Employee : IQuittable
     // METHOD: Quit()
     // Required by the IQuittable interface.
     // Simulates the employee submitting their resignation:
-    //   - Prints a dramatic farewell message to the console.
+    //   - Prints a farewell message to the console.
     // ──────────────────────────────────────
     public void Quit()
     {
         // Print a resignation message using the employee's full name and job title
-        Console.WriteLine($"\n📝 RESIGNATION NOTICE");
+        Console.WriteLine($"\nRESIGNATION NOTICE");
         Console.WriteLine($"──────────────────────────────");
         Console.WriteLine($"Employee : {FirstName} {LastName}");
         Console.WriteLine($"ID       : {EmployeeId}");
         Console.WriteLine($"Title    : {JobTitle}");
         Console.WriteLine($"──────────────────────────────");
-        Console.WriteLine($""{FirstName} has decided to leave the company.");
-        Console.WriteLine($" Effective immediately. Best of luck to the team!"");
+        Console.WriteLine($"{FirstName} has decided to leave the company.");
+        Console.WriteLine($"Effective immediately. Best of luck to the team!");
         Console.WriteLine($"──────────────────────────────\n");
     }
 
@@ -85,7 +85,7 @@ public class Employee : IQuittable
     // ──────────────────────────────────────
     public void DisplayInfo()
     {
-        Console.WriteLine($"👤 {FirstName} {LastName}  |  ID: {EmployeeId}  |  {JobTitle}  |  Salary: {Salary:C}");
+        Console.WriteLine($"{FirstName} {LastName}  |  ID: {EmployeeId}  |  {JobTitle}  |  Salary: {Salary:C}");
     }
 }
 
@@ -160,4 +160,3 @@ class Program
         Console.ReadKey();
     }
 }
-
